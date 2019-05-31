@@ -70,6 +70,26 @@ It is immediately apparent that some of the column names have typos, so let us c
 Now we are all set to explore the different features of the data and determine how good a feature it is for prediction whether a patient is likely to show up at an appointment.
 First we will check how the likelihood that a person will show up at an appointment changes with respect to Age, HourOfTheDay, AwaitingTime. Clearly, HourOfTheDay and AwaitingTime are not good predictors of Status, since the probability of showing up depends feebly on the HourOfTheDay and not at all on the AwaitingTime. The significantly stronger dependency is observed with respect to Age.
 
+## Baseline Modelling
+
+We are going to start modeling to learn more above our variables! For this first run we are going to use ALL our non-categorical variables.
+
+Following are the list of classifier used to predict the model accuracy:
+
+* Logistic Regression
+* Random Forest
+* Support Vector Classifier 
+* Class Imbalacing
+* Decision Tree
+
+For us, among all the classifier Random Forest gives better model Accuracy (80 %)
+
+| No-show    | Precision    | Recall    | F1-Score |
+|------------|--------------|-----------|----------|
+| No         | 0.80         | 0.99      | 0.89     |
+| Yes        | 0.32         | 0.02      |0.03      | 
+
+
 --------------------
 
 ## Introduction
